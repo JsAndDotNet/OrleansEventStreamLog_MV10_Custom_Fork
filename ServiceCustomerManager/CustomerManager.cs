@@ -24,7 +24,7 @@ namespace ServiceCustomerManager
         : EventSourcedGrain<Customer, CustomerState, DomainEventBase>
         , ICustomerManager
     {
-        private static string ConnectionString = @"Server=(localdb)\MSSQLLocalDB;Integrated Security=true;Database=OrleansESL";
+        private static string ConnectionString = StaticData.CONNECTION_STRING;
 
         private readonly ILogger<CustomerManager> Log;
 

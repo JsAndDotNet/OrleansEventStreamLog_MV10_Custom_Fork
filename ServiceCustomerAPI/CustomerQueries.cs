@@ -15,7 +15,7 @@ namespace ServiceCustomerAPI
     public class CustomerQueries 
         : Grain, ICustomerQueries
     {
-        private static string ConnectionString = @"Server=(localdb)\MSSQLLocalDB;Integrated Security=true;Database=OrleansESL";
+        private static string ConnectionString = StaticData.CONNECTION_STRING;
 
         private readonly IClusterClient OrleansClient;
         private readonly ILogger<CustomerQueries> Log;
