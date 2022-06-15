@@ -1,4 +1,9 @@
-﻿USE [OrleansESL]
+
+-- 1. Create a database called 'OrleansESL'
+
+-- 2. Run this script
+
+USE [OrleansESL]
 GO
 
 SET ANSI_NULLS ON
